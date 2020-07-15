@@ -16,7 +16,7 @@ function updateclock() {
 function getnews() {
   let content = document.getElementById('main-content');
   let str = '';
-  url = 'http://newsapi.org/v2/top-headlines?country=in&apiKey=38f3b7aa55ca46c783055e85544e8bcd';
+  url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=38f3b7aa55ca46c783055e85544e8bcd';
   fetch(url).then((response) => {
     return response.text();
   }).then((data) => {
